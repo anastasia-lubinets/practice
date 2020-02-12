@@ -40,6 +40,23 @@ library("dplyr")
 data <- read.csv("Kazo_0.csv", stringsAsFactor = F)
 class(data)
 
+str(data)
+summary(data)
 
+glimpse(data) # gives me a look of the data types in the dataset
+View(data)
 
+nrow(data)
+colnames(data)
+names(data) # same thing
+
+age <- data$age
+class(age)
+
+typeof(age)
+is.vector(age)
+mean(age)
+
+length(which(data$HIV == 1)) # because which creates a vector of indexes, so we need the length of the vector
+length(which(data$male == 1))
 
