@@ -64,3 +64,5 @@ temp$Temperature
 temp$Temperature <- 5/9*(temp$Temperature-32)
 temp
 
+
+
